@@ -1,0 +1,45 @@
+#gradiAdsense {
+    background: #fff;
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+    padding: 3.125rem;
+    text-align: center;
+}
+
+#gradiAdsense h2 {
+    text-transform: uppercase;
+    color: #232323;
+    font-size: 1.563rem;
+    font-weight: 700;
+}
+
+#gradiAdsense p {
+    color: #232323;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+@media only screen and (min-width: 800px) {
+	.left {
+		width: 60%;
+		float: left;
+	}
+
+	.right {
+		width: 35%;
+		float: right;
+	}  
+}
+
+@media only screen and (max-width: 800px) {
+	.left {
+		width: 100%;
+		float: left;
+		display: block;
+	}
+
+	.right {
+		width: 100%;
+		float: right;
+	}  
+}

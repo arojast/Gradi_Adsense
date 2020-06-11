@@ -169,6 +169,15 @@ Class GradiAdsense extends Module {
     
     public function hookDisplayHome()
     {
+        $this->context->controller->registerStylesheet(
+            'module-mymodule-style',
+            'modules/'.$this->name.'/views/css/styles.css',
+            [
+                'media' => 'all',
+                'priority' => 200,
+            ]
+        );
+        
         $imagen = Configuration::get('GRADI_ADSENSE_IMAGEN');
         $texto = Configuration::get('GRADI_ADSENSE_TEXTO');
         $descripcion = Configuration::get('GRADI_ADSENSE_DESCRIPCION');
